@@ -1,0 +1,36 @@
+\documentclass[../main/main.tex]{subfiles}
+
+\begin{document}
+	\begin{figure}[h]
+		
+		\centering
+		\begin{tikzpicture}
+		[node distance = 0.5cm, auto,font=\footnotesize,
+		% STYLES
+		every node/.style={node distance=2cm},
+		% The comment style is used to describe the characteristics of each force
+		comment/.style={rectangle, inner sep= 5pt, text width=2cm, node distance=0.25cm, font=\scriptsize\sffamily},
+		% The force style is used to draw the forces' name
+		force/.style={rectangle, draw, fill=black!10, inner sep=5pt, text width=2.5cm, text badly centered, minimum height=1.2cm, font=\bfseries\footnotesize\sffamily}] 
+		
+		% Draw forces
+		\node [force] (generator) {Generator};
+		\node [force, left=1cm of generator] (Inputvector) {Input Vector $z$};
+		\node [force, right=1cm of generator] (discriminator) {Discriminator};
+		\node[force, above of=generator, right=1cm of generator](realdata){Real Image Data Set};
+		\node[force, right=1cm of discriminator](Real){Real};
+		\node[force, above of=Real](Fake){Fake};
+		
+		% Draw the links between forces
+		\path[->,thick] 
+		(Inputvector) edge (generator)
+		(generator) edge (discriminator)
+		(realdata) edge (discriminator)
+		(discriminator) edge (Fake)
+		(discriminator) edge (Real);
+		
+		\end{tikzpicture} 
+		\caption{A Generative Adversarial Network}
+		\label{fig:1gan}
+	\end{figure}
+\end{document}

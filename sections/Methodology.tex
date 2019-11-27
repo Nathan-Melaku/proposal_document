@@ -1,0 +1,53 @@
+\documentclass[../main/main.tex]{subfiles}
+
+\begin{document}
+	
+	\section{ Methodology}
+	To address the problem mentioned in section \ref{statement}, I'll be using the system architecture proposed in \cite{Hu2018} with some modifications. This architecture is shown in Figure \ref{system}. I choose this system because it is more reliable architecture when it comes to recovery of message  compared to \cite{Zhang2019}. This error of recovery can be further improved by adding some form of error recovery code like Reed-Solomon. If time permits I will also try to address this issue. However it is optional. 
+	
+	In addition to this I took into consideration, how much of an improvement could the change of \gls{GAN} would have on the final result. This eliminates the system proposed in \cite{Ke}. The choice of \gls{infoGAN} in \cite{Ke} is crucial for overall working of the system. 
+	\subfile{../images/proposedArchitecture}
+	As depicted in Figure \ref{phase:one} before the communication between Alice and Bob starts Alice will train a generator. This generator is a \gls{GAN}, which will try to generate the most realistic images it can come up with.
+	After the generator is trained to its convergence. Alice will train the extractor by using the generator's output, and the error between recovered noise vector $z^\prime$ from the output of extractor and the initial noise vector $z$. This second phase is shown in Figure \ref{phase:two}. When this is done Alice will have both a generator and an extractor that act as  encoder and  decoder respectively. The extractor will be sent to Bob and steganographic communication can start between Alice and Bob.
+	
+	According to \cite{Cachin1998},  if the relative entropy between  probability distribution of  cover image and probability distribution of stego image is less than $\varepsilon$ the system is considered to be $\varepsilon$-secure. \cite{Zhang2019} extended this method to generative steganography as follows. 
+		
+	\theoremstyle{definition}
+	\begin{definition}{$\varepsilon$-secure generative steganography: }
+		If the generated images have sufficiently similar probability distribution as that of the real dataset,  the system is considered to be secure. This relation is shown in equation \ref{esecure}.
+		\begin{equation} \label{esecure}
+		\mathcal{D}(P_{generated},P_{real}) \leq \varepsilon
+		\end{equation}
+		
+		If $\varepsilon=0$ then the system is said to be perfectly secure. 
+	\end{definition}
+
+	\cite{Zhang2019} used the Jensen-Shannon divergence ($D_{JS}$) as the function $\mathcal{D}(\cdot)$. However, in my method I will not use \gls{DCGAN}. So the usage of $D_{JS}$ will not be feasible. Therefore I will have to come up with another metric to calculate this divergence, and this would be selected based on the choice of \gls{GAN}.  
+	
+	The next important question that must be answered in my research is the choice of \gls{GAN}. For this I am going to consider the following parameters. 
+	\begin{enumerate}
+		\item Stability,
+		\item Convergence speed,
+		\item Quality of  generated image 
+		\item And most importantly how the divergence between the probability distributions is measured in the proposed \gls{GAN}.
+	\end{enumerate}
+
+	I am going to implement the proposed architecture with different \gls{GAN}s and test for the above mentioned parameters. Even though more research is going to be conducted in the coming months, the following \gls{GAN}s must be tested since they have good performance in terms of the above mentioned parameters. 
+	\begin{itemize}
+		\item \gls{BEGAN} \cite{berthelot2017began} 
+		\item \gls{RGAN} \cite{jolicoeur2018relativistic}
+		\item  \gls{WGAN-DIV} \cite{wu2018wasserstein}
+		\item \gls{WGAN-GP} \cite{gulrajani2017improved}
+	\end{itemize}
+
+	In any machine learning research selecting the dataset for training is crucial. In my research I will consider the following point to guide me in the selection process. 
+	
+	\begin{enumerate}
+		\item Availability of the dataset.
+		\item Usage of the dataset in previous researches.
+		\item Feature richness and diversity
+	\end{enumerate}
+	Based on this celebA \cite{liu2015faceattributes} dataset has no competitor.  It has 202,599 face images, with more than 40 binary attributes. In addition it has been used in \cite{Zhang2019}, \cite{Hu2018} and \cite{Ke}. This dataset is available at \url{http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html}. Some other datasets that are previously used in similar research include MNIST \cite{mnist}, Food101 \cite{bossard14}, and LFW \cite{LFWTech}. All of them are available freely. 
+	
+	Another important method that needs to be devised is a testing method for comparison. Testing for convergence speed and stability is straight forward. It can be interpreted from the error loss vs training epoch graph. However, measuring for image quality is somewhat a difficult challenge. In most papers \cite{Jolicoeur-Martineau2019}, \cite{arjovsky2017wasserstein}, \cite{gulrajani2017improved} visual inspection of image fidelity is used. \cite{Li2018BEGANs} used inception score to measure the quality and diversity of the generated images. There are some other testing methods for image quality that might assist in this research. This include visual turing test \cite{geman2015visual} and \gls{MOS} (mean opinion score) \cite{streijl2016mean}. I will research more in to this methods and select meaningful methods for comparison.
+\end{document}

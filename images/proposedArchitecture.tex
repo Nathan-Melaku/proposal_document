@@ -1,0 +1,67 @@
+\documentclass[../main/main.tex]{subfiles}
+
+\begin{document}
+	
+	\begin{figure}[h]
+		
+		\begin{subfigure}{.5\textwidth}
+			
+			\centering
+			\begin{tikzpicture}
+			[node distance=.8cm,
+			start chain=going below,]
+			
+			\node (Generator) [punktchain ]  {Generator};
+			\begin{scope}[start branch=generate,
+			%We need to redefine the join-style to have the -> turn out right
+			every join/.style={->, thick, shorten <=1pt}, ]
+			\node[punktchain, on chain=going left, join=by {<-}]
+			(noize) {Noise vector $z$};
+			\end{scope}
+			\begin{scope}[start branch=Discriminator,]
+			\node (Discriminator) [punktchain, on chain=going right, join=by {->}] {Discriminator};
+			\begin{scope}[start branch=real,]
+			\node (real) [punktchain, on chain=going right, join=by {<-}] {real dataset};
+			\end{scope}
+			\end{scope}
+			\end{tikzpicture}
+			\caption{phase one: train the Generator}
+			\label{phase:one}
+		\end{subfigure}
+		
+		\begin{subfigure}{.5\textwidth}
+		
+		\centering
+		\begin{tikzpicture}
+		[node distance=.8cm,
+		start chain=going below,]
+		\node(Error)[punktchain ,  join,] {Error distance};
+		\node (Extractor) [punktchain,on chain=going above, join, ]  {Extractor};
+		
+		\begin{scope}[start branch=generate,
+		%We need to redefine the join-style to have the -> turn out right
+		every join/.style={->, thick, shorten <=1pt}, ]
+		\node[punktchain, on chain=going left, join=by {<-}]
+		(Generator) {Generator};
+		\begin{scope}[start branch=Extractor,]
+		\node (noise) [punktchain, on chain=going left, join=by {<-}] {Noise vector $z$};
+		\end{scope}
+		\end{scope}
+		
+		\begin{scope}[start branch=recovered,]
+		\node (recovered) [punktchain, on chain=going right, join=by {->}] {Recovered Vector $z^\prime$};
+
+		\end{scope}
+		
+		
+		 \draw[|->, thick,] (noise.south) |-+(0,-3.45em)-> (Error.west);
+		 \draw[|->, thick,] (recovered.south) |-+(0,-3.35em)-> (Error.east);
+		\end{tikzpicture}
+		\caption{phase two: train the Extractor}
+		\label{phase:two}
+	\end{subfigure}
+			\caption{System architecture of the proposed research.
+			Figure \ref{phase:one} Shows the training of the generator, and \ref{phase:two} shows the training of the extractor. }
+		\label{system}
+	\end{figure}
+\end{document}
