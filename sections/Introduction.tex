@@ -4,7 +4,7 @@
 	
 	\section{Introduction}
 	
-	In the past decades a wide spread use of digital communication and a huge increase in network bandwidth have been observed. The internet has become the primary gateway for media transmission, including audio, video, image, and text. The need for securing this transmission is of prime importance. Many practices which provide this security are proposed and are working in the wild.\cite{Yahya2018} 
+	In the past decades a wide spread use of digital communication and a huge increase in network bandwidth have been observed. The internet has become the primary gateway for media transmission, including audio, video, image, and text. The need for securing this transmission is of prime importance. Many practices which provide this security are proposed and are working in the wild.\shortcite{Yahya2018} 
 	
 	There are two common approaches to provide security in transmission.
 	\begin{enumerate}
@@ -31,7 +31,7 @@
 	
 	Steganography on the other hand approaches the question of security from a different perspective. It is a technique of camouflaging the secret information in a cover media. Thereby preventing any unintended recipient from even recognizing the presence of hidden secret information in the cover media.     
 	
-	Steganography in its classical model was proposed by Simmons in 1984 as the famously known \textquotedblleft prisoners' problem\textquotedblright.~\cite{simmons1984prisoners} In this problem Alice and Bob are in prison far apart from each other. And they would like to devise an escape-plan. However, the only form of communication they have is through the warden, who allow the prisoners to exchange message that is completely open to him. So the question is how could Alice and Bob communicate about their escape-plan without the warden getting suspicious. Equations \ref{stegoEq1} and \ref{stegEq2} explains this process. 
+	Steganography in its classical model was proposed by Simmons in 1984 as the famously known \textquotedblleft prisoners' problem\textquotedblright.~\shortcite{simmons1984prisoners} In this problem Alice and Bob are in prison far apart from each other. And they would like to devise an escape-plan. However, the only form of communication they have is through the warden, who allow the prisoners to exchange message that is completely open to him. So the question is how could Alice and Bob communicate about their escape-plan without the warden getting suspicious. Equations \ref{stegoEq1} and \ref{stegEq2} explains this process. 
 	\begin{align}
 	\label{stegoEq1}
 	s = Embed\{m, c\} \\
@@ -49,21 +49,21 @@
 	\end{itemize}
 	 
 	\subsection{Requirements Of Steganography} \label{reqStego}
-	There are mainly three requirements for steganography.~\cite{Yahya2018} The first requirement is Imperceptibility (indetectability), which measures how difficult it is to recognize the presence of hidden information. This is the most crucial and primary requirement of steganography.~\cite{chen2012capacity} 
+	There are mainly three requirements for steganography.~\shortcite{Yahya2018} The first requirement is Imperceptibility (indetectability), which measures how difficult it is to recognize the presence of hidden information. This is the most crucial and primary requirement of steganography.~\shortcite{chen2012capacity} 
 	
-	Robustness is the other requirement. It measures how well the system resists the elimination of the embedded information in various attacks such as compression, and filtering of the stego-image.~\cite{bahi2012steganography}
+	Robustness is the other requirement. It measures how well the system resists the elimination of the embedded information in various attacks such as compression, and filtering of the stego-image.~\shortcite{bahi2012steganography}
 	
 	The third requirement is payload capacity. It represents the maximum amount of data that can be embedded using the steganographic system.
 	
 	\subfile{../images/gan}
 	\subsection{Traditional Steganography}
-	In traditional steganography, secret message is embedded directly in the pixel values of the cover image. Generally traditional steganographic algorithms can be divided into two: spacial domain hiding and transform domain hiding.\cite{Liu2018}. In spacial domain hiding, the secret information is hidden by replacing the \gls{LSB}\cite{Liu2018} while in transform domain method the cover image data is modified by changing some statistical features to achieve secrete hiding, such as the hidden method in \gls{DFT}(discrete Fourier transform) domain, \gls{DCT} (discrete cosine transform) domain, and \gls{DWT} (discrete wavelet transform) domain. 
+	In traditional steganography, secret message is embedded directly in the pixel values of the cover image. Generally traditional steganographic algorithms can be divided into two: spacial domain hiding and transform domain hiding.\shortcite{Liu2018}. In spacial domain hiding, the secret information is hidden by replacing the \gls{LSB}\shortcite{Liu2018} while in transform domain method the cover image data is modified by changing some statistical features to achieve secrete hiding, such as the hidden method in \gls{DFT}(discrete Fourier transform) domain, \gls{DCT} (discrete cosine transform) domain, and \gls{DWT} (discrete wavelet transform) domain. 
 	
-	The main weekness of traditional steganographic framework defined in equations \ref{stegoEq1} and \ref{stegEq2} is it involves the modification of an existing cover image. Therefore, it is inevitable to leave slight trace of modification. This opens a door for very successful steganalysis. To provide a solution to this a different type of steganography that is based on cover sythesis has been proposed and is still a hot research issue.\cite{Hu2018} 
+	The main weekness of traditional steganographic framework defined in equations \ref{stegoEq1} and \ref{stegEq2} is it involves the modification of an existing cover image. Therefore, it is inevitable to leave slight trace of modification. This opens a door for very successful steganalysis. To provide a solution to this a different type of steganography that is based on cover sythesis has been proposed and is still a hot research issue.\shortcite{Hu2018} 
 	
 	\subsection{\gls{GAN} (Generative Adversarial Network)}
 	 
-	 \gls{GAN}s are first introduced in \cite{goodfellow2014generative} in 2014. In a \gls{GAN} a generative model is trained with an adversary, namely the discriminator  which is trained on a real image data set to discriminate any counterfeit image that are not from the real data distribution. This competition drives both parties to improve their technique until the generated images are not distinguishable from the real ones. Figure \ref{fig:1gan} show the over all model of a \gls{GAN}. The paper \cite{goodfellow2014generative} further shows that when both the generator and the discriminator are multilayer perceptron it is possible to train the entire system using backpropagation.  
+	 \gls{GAN}s are first introduced in \shortcite{goodfellow2014generative} in 2014. In a \gls{GAN} a generative model is trained with an adversary, namely the discriminator  which is trained on a real image data set to discriminate any counterfeit image that are not from the real data distribution. This competition drives both parties to improve their technique until the generated images are not distinguishable from the real ones. Figure \ref{fig:1gan} show the over all model of a \gls{GAN}. The paper \shortcite{goodfellow2014generative} further shows that when both the generator and the discriminator are multilayer perceptron it is possible to train the entire system using backpropagation.  
 	
-	Starting from their conception \gls{GAN}s are being widely used in computer vision, natural language processing, image synthesis, and now in steganography. \cite{Zhang2019} 
+	Starting from their conception \gls{GAN}s are being widely used in computer vision, natural language processing, image synthesis, and now in steganography. \shortcite{Zhang2019} 
 \end{document}
