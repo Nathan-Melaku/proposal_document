@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.23)  29 NOV 2019 09:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.23)  2 DEC 2019 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1106,30 +1106,49 @@ Overfull \hbox (184.66692pt too wide) in paragraph at lines 59--60
  []
 
 ) [9] [10]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 50.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 53.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )) [11]
 (../sections/Scope.tex) [12] (../sections/significance.tex) [13]
 (../sections/Workplan.tex) [14] (../sections/Budget.tex) [15] (./main.bbl
+! Missing $ inserted.
+<inserted text> 
+                $
+l.166 ...PACrefDOI} \doi{10.1007/3-540-49380-8_21}
+                                                   \end{APACrefDOI}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.166 ...0.1007/3-540-49380-8_21} \end{APACrefDOI}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 [16] [17]
-Underfull \hbox (badness 5446) in paragraph at lines 938--950
+Underfull \hbox (badness 5446) in paragraph at lines 908--920
 []\OT1/ptm/m/n/12 Yann Le-Cun, C. J. B., Corinna Cortes.  (n.d.[]).  \OT1/ptm/m
 /it/12 The mnist database
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--950
-\OT1/ptm/m/it/12 of hand-writ-ten dig-its.  \OT1/ptm/m/n/12 Re-trieved Novem-be
-r 29, 2019, from
+Underfull \hbox (badness 10000) in paragraph at lines 908--920
+\OT1/ptm/m/it/12 of hand-writ-ten dig-its.  \OT1/ptm/m/n/12 Re-trieved De-cem-b
+er 2, 2019, from
  []
 
 ) [18] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 24694 strings out of 492623
- 483359 string characters out of 6135669
- 698628 words of memory out of 5000000
- 27975 multiletter control sequences out of 15000+600000
+ 24691 strings out of 492623
+ 483325 string characters out of 6135669
+ 698495 words of memory out of 5000000
+ 27972 multiletter control sequences out of 15000+600000
  30509 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,12n,94p,2000b,1459s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1145,7 +1164,7 @@ ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sha
 re/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/typ
 e1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (24 pages, 306163 bytes).
+Output written on main.pdf (24 pages, 306394 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream

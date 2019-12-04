@@ -163,7 +163,7 @@ Cachin, C.%
   Lecture Notes in Artificial Intelligence and Lecture Notes in
   Bioinformatics)}{1525}{}{306--318}.
 \newblock
-\begin{APACrefDOI} \doi{10.1007/3-540-49380-8\_21} \end{APACrefDOI}
+\begin{APACrefDOI} \doi{10.1007/3-540-49380-8_21} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -542,41 +542,11 @@ Kerckhoffs, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-C.~Li%
-, Zhu%
-, Welling%
-\BCBL {}\ \BBA {} Zhang%
-}{%
-C.~Li%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2018}}%
-}]{%
-Li2018}
-\APACinsertmetastar {%
-Li2018}%
-\begin{APACrefauthors}%
-Li, C.%
-, Zhu, J.%
-, Welling, M.%
-\BCBL {}\ \BBA {} Zhang, B.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2018}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Graphical generative adversarial networks}} {{Graphical
-  generative adversarial networks}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Advances in Neural Information Processing
-  Systems}{2018-Decem}{January}{6069--6080}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Y.~Li%
+Li%
 , Xiao%
 \BCBL {}\ \BBA {} Ouyang%
 }{%
-Y.~Li%
+Li%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2018}}%
 }]{%

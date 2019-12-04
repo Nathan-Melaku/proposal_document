@@ -6,9 +6,10 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{apacite}
 \author{Nathan Melaku}
 \title{Powerful Generative Steganography With Generative Adversarial Networks}
-%\setbeamercovered{transparent} 
+\setbeamercovered{transparent} 
 %\setbeamertemplate{navigation symbols}{} 
 \titlegraphic{\includegraphics[width=2cm]{../images/logo}\hspace*{4.75cm}~%
    \includegraphics[width=2cm]{../images/logo}
@@ -22,38 +23,38 @@
     \usebeamerfont{footline}%
     \usebeamercolor[fg]{footline}%
     \hspace{1em}%
-    \insertframenumber/\inserttotalframenumber
+    \insertframenumber
 }
 
 \setbeamertemplate{footline}[frame number]
 \begin{document}
 
-\begin{frame}
+\begin{frame} % cover frame
 	\titlepage
 \end{frame}
 
-\begin{frame}
+\begin{frame} % table of contents frame
 \tableofcontents
 \end{frame}
 
-\begin{frame}{Introduction}
 \section{Introduction}
-	
+\begin{frame}{Introduction} % Introduction stego
+
 % what is steganography
 \begin{itemize}
-\item What is Steganography?
+\item Steganography
 \begin{itemize}
-	\item simmon's prisoners.
-	\item Hiding Information in plain sight.
+	\item <1-> Hiding Information in plain sight.
+	\item <2-> simmon's prisoners. \cite{simmons1984prisoners}
 \end{itemize}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Introduction}
+\begin{frame} % introduction gan
 
 % what are GANs
 \begin{itemize}
-	\item What is a GAN?
+	\item GAN
 \end{itemize}
 
 \begin{figure}
@@ -61,15 +62,17 @@
 	\caption{GAN}
 \end{figure}
 
-$$
-	\min_G\max_D V(D,G) = E_{x~p_{data}(x)}[log D(x)] + E_{z~p_z(z)}[log(1 - D(G(z)))].
-$$
+\begin{multline*}
+\min_G\max_D V(D,G) = E_{x~p_{data}(x)}[log D(x)] \\
++ E_{z~p_z(z)}[log(1 - D(G(z)))].
+\end{multline*}
 
 \end{frame}
 
-\begin{frame}{Introduction}
+\begin{frame} % introduction requirement steg
 
 % Requirements for steganography
+Requirements for steganography 
 	\begin{itemize}
 		\item<1-> Imperceptibility 
 		\item<2->  Robustness 
@@ -77,42 +80,58 @@ $$
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Literature Review}
-
 \section{Literature Review}
+\begin{frame}{Literature Review} % Literature reveiw
+
+
 % cover synthesis
 Different approaches to steganography
 \begin{itemize}
 	\item cover modification 
-	\item cover synthesis: Fridrich, K.-C. Wu \& Wang
+	\item cover synthesis: \shortcite{fridrich2009steganography}
 \end{itemize}
 
 \end{frame}
 
-\begin{frame} {Literature Review}
+\begin{frame} % Literature Gans in stego
 
 % GANs in stego
-Volkhonskiy, Shi, Dong,Tang,Hayes
+GAN in Steganography.
+\begin{itemize}
+	\item <1-> \shortcite{volkhonskiy2017steganographic}
+	\item <2-> \shortcite{shi2017ssgan}
+	\item <3-> And some more others \shortcite{tang2017automatic},\shortcite{hayes2017generating}
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Literature Review}
-	\subsection{SWE}
+\begin{frame} % Literature Ke
+	
 	% Ke
-	Ke
+	\begin{figure}
+		\includegraphics[scale=0.5]{../images/Ke}
+		\caption{Proposed System in \shortcite{Ke}}
+	\end{figure}
 \end{frame}
 
-\begin{frame}{Literature Review}
+\begin{frame} % Literature Hu
 	% Hu
-	Hu
+	\begin{figure}
+		\includegraphics[scale=0.4]{../images/Hu}
+		\caption{Proposed System in \cite{Hu2018}}
+	\end{figure}
 \end{frame}
 
-\begin{frame}{Literature Review}
+\begin{frame} % Literature Zhang
 	% Zhang
-	Zhang
+	\begin{figure}
+		\includegraphics[scale=0.45]{../images/zhang}
+		\caption{Proposed System in \shortcite{Zhang2019}}
+	\end{figure}
 \end{frame}
 
-\begin{frame}{Problem Statement}
-	\section{Problem Statement}
+\section{Problem Statement}
+\begin{frame}{Problem Statement} % Problem Statement
+	
 	% problem statement
 	
 	Observed problems: 
@@ -123,30 +142,34 @@ Volkhonskiy, Shi, Dong,Tang,Hayes
 	\end{itemize}
 
 \pause
-\textbf{\textquotedblleft This is mainly associated to the GAN technique used in the
-	framework.\textquotedblright}
+\visible{\textbf{\textquotedblleft This is mainly associated to the GAN technique used in the
+		framework.\textquotedblright}}
+
 \end{frame}
 
-\begin{frame}{Objectives}
-	\section{Objectives}
+\section{Objectives}
+\begin{frame}{Objectives} % Objective general
+
 	%general objectives
-	Design and implement a powerful generative steganographic framework using amost suitable GAN.
+	Design and implement a powerful generative steganographic framework using a
+most suitable GAN.
 \end{frame}
 
-\begin{frame}{Objectives}
+\begin{frame} %objective specific
 	
 	%specific objectives
 	Specific objectives:
 	\begin{itemize}
-		\item Improve stability of Training and convergence speed.
-		\item Generate more realistic image.
-		\item Maintain state of the art security.
+		\item <1-> Improve stability of Training and convergence speed.
+		\item <2-> Generate more realistic image.
+		\item <3-> Maintain state of the art security.
 	\end{itemize}
 	
 \end{frame}
 
-\begin{frame}{Methodology}
-	\section{Methodology}
+\section{Methodology}
+\begin{frame}{Methodology} % Methodology architecture
+
 	% system architecture
 	\begin{figure}
 		\includegraphics[scale=.45]{arch}
@@ -154,7 +177,7 @@ Volkhonskiy, Shi, Dong,Tang,Hayes
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Methodology}
+\begin{frame} % Methodology Gan types
 
 	% choice of GAN
 	Choice of GAN: 
@@ -166,7 +189,7 @@ Volkhonskiy, Shi, Dong,Tang,Hayes
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Methodology}
+\begin{frame} % Methodology dataset
 
  % choice of dataset
  Choice of dataset:
@@ -178,10 +201,10 @@ Volkhonskiy, Shi, Dong,Tang,Hayes
  \end{itemize}
 \end{frame}
 
-\begin{frame}{Methodology}
+\begin{frame} % Methodology testing method
 	
 	% testing methods
-	Choice of dataset:
+	Choice of testing method:
 	\begin{itemize}
 		\item Visual instpection
 		\item Inception score
@@ -190,8 +213,9 @@ Volkhonskiy, Shi, Dong,Tang,Hayes
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Scope}
 \section{Scope}
+\begin{frame}{Scope} % Scope
+
 \begin{itemize}
 	\item <1-> Robustness
 	\item <2-> Passive Adversary
@@ -200,8 +224,9 @@ Volkhonskiy, Shi, Dong,Tang,Hayes
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Significance Of The Study}
 \section{Significance Of The Study}
+\begin{frame}{Significance Of The Study} % significance
+
 	The main problem in generative steganography 
 	
 	\begin{center}
@@ -209,18 +234,36 @@ Volkhonskiy, Shi, Dong,Tang,Hayes
 	\end{center}
 \end{frame}
 
-
-\begin{frame}{Work Plan}
 \section{Work Plan}
+\begin{frame}{Work Plan} % Workplan
 
+\begin{figure}
+	\includegraphics[width=10cm]{../images/workplan}
+	\caption{Proposed work plan}
+\end{figure}
 \end{frame}
 
-\begin{frame}{Budget}
 \section{Budget}
+\begin{frame}{Budget} % Budget
 
+Main cost of the project: 
+\begin{itemize}
+	\item Powerful GPU for training. 
+	\begin{itemize}
+		\item From the university
+		\item Amazon EC2
+		\item Google Cloud
+	\end{itemize}
+\end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame} [allowframebreaks] {Reference}% reference
+	
+	\bibliographystyle{apacite}
+	\bibliography{../bib/reference}
+\end{frame}
+
+\begin{frame} % Thank you
 \begin{center}
 \LARGE
 THANK YOU

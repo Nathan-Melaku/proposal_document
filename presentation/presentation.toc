@@ -1,15 +1,11 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Literature Review}{8}{0}{2}
-\beamer@subsectionintoc {2}{1}{SWE}{10}{0}{2}
-\beamer@sectionintoc {3}{Problem Statement}{13}{0}{3}
-\beamer@sectionintoc {4}{Problem Statement}{14}{0}{4}
-\beamer@sectionintoc {5}{Objectives}{15}{0}{5}
-\beamer@sectionintoc {6}{Methodology}{17}{0}{6}
-\beamer@sectionintoc {7}{Scope}{21}{0}{7}
-\beamer@sectionintoc {8}{Scope}{22}{0}{8}
-\beamer@sectionintoc {9}{Scope}{23}{0}{9}
-\beamer@sectionintoc {10}{Scope}{24}{0}{10}
-\beamer@sectionintoc {11}{Significance Of The Study}{25}{0}{11}
-\beamer@sectionintoc {12}{Work Plan}{26}{0}{12}
-\beamer@sectionintoc {13}{Budget}{27}{0}{13}
+\beamer@sectionintoc {2}{Literature Review}{9}{0}{2}
+\beamer@sectionintoc {3}{Problem Statement}{16}{0}{3}
+\beamer@sectionintoc {4}{Objectives}{18}{0}{4}
+\beamer@sectionintoc {5}{Methodology}{22}{0}{5}
+\beamer@sectionintoc {6}{Scope}{26}{0}{6}
+\beamer@sectionintoc {7}{Significance Of The Study}{30}{0}{7}
+\beamer@sectionintoc {8}{Work Plan}{31}{0}{8}
+\beamer@sectionintoc {9}{Budget}{32}{0}{9}
+\contentsline {section}{References}

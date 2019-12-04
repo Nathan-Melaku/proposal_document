@@ -1,0 +1,264 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Fridrich%
+}{%
+Fridrich%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+fridrich2009steganography}
+\APACinsertmetastar {%
+fridrich2009steganography}%
+\begin{APACrefauthors}%
+Fridrich, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2009}.
+\newblock
+\APACrefbtitle {Steganography in digital media: principles, algorithms, and
+  applications} {Steganography in digital media: principles, algorithms, and
+  applications}.
+\newblock
+\APACaddressPublisher{}{Cambridge University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hayes%
+\ \BBA {} Danezis%
+}{%
+Hayes%
+\ \BBA {} Danezis%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+hayes2017generating}
+\APACinsertmetastar {%
+hayes2017generating}%
+\begin{APACrefauthors}%
+Hayes, J.%
+\BCBT {}\ \BBA {} Danezis, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Generating steganographic images via adversarial
+  training} {Generating steganographic images via adversarial training}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Advances in Neural Information Processing Systems}
+  {Advances in neural information processing systems}\ (\BPGS\ 1954--1963).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hu%
+, Wang%
+, Jiang%
+, Zheng%
+\BCBL {}\ \BBA {} Li%
+}{%
+Hu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Hu2018}
+\APACinsertmetastar {%
+Hu2018}%
+\begin{APACrefauthors}%
+Hu, D.%
+, Wang, L.%
+, Jiang, W.%
+, Zheng, S.%
+\BCBL {}\ \BBA {} Li, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A novel image steganography method via deep
+  convolutional generative adversarial networks}} {{A novel image steganography
+  method via deep convolutional generative adversarial networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Access}{6}{}{38303--38314}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ACCESS.2018.2852771} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ke%
+, Zhang%
+, Liu%
+, Su%
+\BCBL {}\ \BBA {} Yang%
+}{%
+Ke%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+Ke}
+\APACinsertmetastar {%
+Ke}%
+\begin{APACrefauthors}%
+Ke, Y.%
+, Zhang, M\BHBI q.%
+, Liu, J.%
+, Su, T\BHBI t.%
+\BCBL {}\ \BBA {} Yang, X\BHBI y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Generative Steganography with Kerckhoffs’ Principle
+  based on Generative Adversarial Networks}} {{Generative Steganography with
+  Kerckhoffs’ Principle based on Generative Adversarial Networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:1711.04916}{}{}{1--5}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shi%
+, Dong%
+, Wang%
+, Qian%
+\BCBL {}\ \BBA {} Zhang%
+}{%
+Shi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+shi2017ssgan}
+\APACinsertmetastar {%
+shi2017ssgan}%
+\begin{APACrefauthors}%
+Shi, H.%
+, Dong, J.%
+, Wang, W.%
+, Qian, Y.%
+\BCBL {}\ \BBA {} Zhang, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {SSGAN: secure steganography based on generative
+  adversarial networks} {Ssgan: secure steganography based on generative
+  adversarial networks}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Pacific Rim Conference on Multimedia} {Pacific rim
+  conference on multimedia}\ (\BPGS\ 534--544).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Simmons%
+}{%
+Simmons%
+}{%
+{\protect \APACyear {1984}}%
+}]{%
+simmons1984prisoners}
+\APACinsertmetastar {%
+simmons1984prisoners}%
+\begin{APACrefauthors}%
+Simmons, G\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1984}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The prisoners’ problem and the subliminal channel}
+  {The prisoners’ problem and the subliminal channel}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Advances in Cryptology} {Advances in cryptology}\
+  (\BPGS\ 51--67).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tang%
+, Tan%
+, Li%
+\BCBL {}\ \BBA {} Huang%
+}{%
+Tang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+tang2017automatic}
+\APACinsertmetastar {%
+tang2017automatic}%
+\begin{APACrefauthors}%
+Tang, W.%
+, Tan, S.%
+, Li, B.%
+\BCBL {}\ \BBA {} Huang, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Automatic steganographic distortion learning using a
+  generative adversarial network} {Automatic steganographic distortion learning
+  using a generative adversarial network}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Signal Processing Letters}{24}{10}{1547--1551}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Volkhonskiy%
+, Nazarov%
+, Borisenko%
+\BCBL {}\ \BBA {} Burnaev%
+}{%
+Volkhonskiy%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+volkhonskiy2017steganographic}
+\APACinsertmetastar {%
+volkhonskiy2017steganographic}%
+\begin{APACrefauthors}%
+Volkhonskiy, D.%
+, Nazarov, I.%
+, Borisenko, B.%
+\BCBL {}\ \BBA {} Burnaev, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Steganographic generative adversarial networks}
+  {Steganographic generative adversarial networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:1703.05502}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhang%
+\ \BBA {} Yang%
+}{%
+Zhang%
+\ \BBA {} Yang%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+Zhang2019}
+\APACinsertmetastar {%
+Zhang2019}%
+\begin{APACrefauthors}%
+Zhang, M.%
+\BCBT {}\ \BBA {} Yang, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Generative Steganography by Sampling}} {{Generative
+  Steganography by Sampling}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Access}{7}{}{118586--118597}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ACCESS.2019.2920313} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
